@@ -1,6 +1,5 @@
 const { orderDao, userDao } = require('../models');
 const { throwError } = require('../utils/throwError');
-const { AppDataSource } = require('../models');
 
 const countCart = async (userId) => {
   const count = await userDao.countCart(userId);
